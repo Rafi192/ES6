@@ -5,4 +5,5 @@ function sum(num1,num2=9){
 
 // sum(10,20, 40,50 ,60);
 // default parameter = undefined
+// default value can be set. 
 sum(10)

@@ -32,3 +32,4 @@ console.log(obj)
 Object.assign(obj, {hobby:"coding"})
 
 console.log(obj)
+
