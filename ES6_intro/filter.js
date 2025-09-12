@@ -6,6 +6,8 @@ const result = numbers.filter((x) => {
 //    return res
 }
 );
+// filter expects a boolean return. keeps the elemtns true, 
+// check the condition and filters the false one.
 
 console.log(result)
 
