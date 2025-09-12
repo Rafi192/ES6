@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      #post-container {
+        max-width: 30%;
+      }
+    </style>
   </head>
   <body>
     <button onclick="loadData()">Load Data</button>
 
     <button onclick="load_post()">Load Post</button>
+    <!-- <ul id="post-container"></ul> -->
+    <div id="post-container">
+      <div id="post">
+        <h2 id="title">Title of the post</h2>
+        <p id="body-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos
+          libero et magni ad quasi dolor, numquam laboriosam odio nemo! Magni
+          beatae earum eligendi distinctio aliquid recusandae asperiores
+          explicabo laborum?
+        </p>
+      </div>
+    </div>
 
     <script src="json_api.js"></script>
   </body>

@@ -12,7 +12,7 @@ const loadData = () =>{
 
     }
 
-post_url = 'https://jsonplaceholder.typicode.com/posts'
+const post_url = 'https://jsonplaceholder.typicode.com/posts'
 
 const load_post = ()=>{
     fetch(post_url)
@@ -22,7 +22,18 @@ const load_post = ()=>{
 
 const display = (posts) =>{
     // console.log(posts)
+    const postContainer = document.getElementById("post-container")
+    // console.log(postContainer)
+
     posts.forEach(post => {
-        console.log(post)
+        // console.log(post)
+        const li = document.createElement('li')
+        li.innerText = post.title;
+        console.log(li)
+
+        // add li to container
+
+        postContainer.appendChild(li)
+
     });
 }
