@@ -7,7 +7,25 @@
 
     <style>
       #post-container {
-        max-width: 30%;
+        max-width: 1160px;
+        border: 2px solid gainsboro;
+        /* margin: 0 auto; */
+        margin: 50 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      #post {
+        /* border: 1px solid saddlebrown; */
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        /* text-align: justify; */
+        box-shadow: 1px 1px 1px 1px grey;
+        border-radius: 10px;
+      }
+      #post p {
+        text-align: justify;
       }
     </style>
   </head>
@@ -16,17 +34,7 @@
 
     <button onclick="load_post()">Load Post</button>
     <!-- <ul id="post-container"></ul> -->
-    <div id="post-container">
-      <div id="post">
-        <h2 id="title">Title of the post</h2>
-        <p id="body-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos
-          libero et magni ad quasi dolor, numquam laboriosam odio nemo! Magni
-          beatae earum eligendi distinctio aliquid recusandae asperiores
-          explicabo laborum?
-        </p>
-      </div>
-    </div>
+    <div id="post-container"></div>
 
     <script src="json_api.js"></script>
   </body>

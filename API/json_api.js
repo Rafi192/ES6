@@ -24,16 +24,29 @@ const display = (posts) =>{
     // console.log(posts)
     const postContainer = document.getElementById("post-container")
     // console.log(postContainer)
+    postContainer.innerHTML =" "
 
     posts.forEach(post => {
         // console.log(post)
-        const li = document.createElement('li')
-        li.innerText = post.title;
-        console.log(li)
+        // const li = document.createElement('li')
+
+        // li.innerText = post.title;
+        // console.log(li)
 
         // add li to container
+        const div = document.createElement('div')
 
-        postContainer.appendChild(li)
+        div.innerHTML = `
+         <div id="post">
+        <h2 id="title">${post.title}</h2>
+        <p id="body-para">
+         ${post.body}
+        </p>
+      </div>
+        
+        `
+        // append to the container
+        postContainer.appendChild(div)
 
     });
 }
